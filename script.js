@@ -45,8 +45,10 @@ function trocarImagem() {
     '[name="opcao-imagem"]:checked'
   ).id;
   imagemSelecionada = idOpcaoSelecionada.charAt(0);
-  imagemVisualizacao.src = 'imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg'; // Corrigido o caminho da imagem
+  // Correção aqui
+  imagemVisualizacao.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg';
 }
+
 
 function trocarTamanho() {
   // Atualizar variável de controle do tamanho da caixa
