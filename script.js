@@ -45,7 +45,7 @@ function trocarImagem() {
     '[name="opcao-imagem"]:checked'
   ).id;
   imagemSelecionada = idOpcaoSelecionada.charAt(0);
-  imagemVisualizacao.src = '/imagens/opcoes-cores/' +opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg';
+  imagemVisualizacao.src = 'imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg'; // Corrigido o caminho da imagem
 }
 
 function trocarTamanho() {
